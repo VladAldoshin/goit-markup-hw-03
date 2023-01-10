@@ -4,8 +4,12 @@
   --logo-typical-fw: font-weight: 800;
   --logo-typical-fs: font-size: 18px;
 }
+
 h1,h2,h3,p {margin-top: 0; margin-bottom: 0;}
+
 ul{margin-top: 0; margin-bottom: 0; padding-left: 0;}
+
+img{display: block;}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -13,22 +17,26 @@ body {
   color: #ffffff;
   background-color: #ffffff;
 }
-.container {width: 1152px; margin-left: auto; margin-right: auto; padding-left: 12px; padding-right: 12px;}
+.container {width: 1152px; margin-left: auto; margin-right: auto; padding-left: 12px; padding-right: 12px; outline: 2px solid tomato;}
 
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
+
 .logo{letter-spacing: 0.03em;
   text-transform: uppercase;}
-.logo-head {
+
+  .logo-head {
   font-family: var(--logo-font);
   font-weight: var(--logo-typical-fw);
   font-size: var(--logo-typical-fs);
   line-height: 1.33;
 }
+
 .logo-footer {
   font-family: var(--logo-font);
   font-weight: var(--logo-typical-fw);
@@ -39,11 +47,13 @@ body {
   text-decoration: none;
   list-style: none;
 }
-/* =======WebStudio======== */
-/* =======Header========== */
+/* =====================================WebStudio==================================== */
+/* =======================================Header==================================== */
+
 .main-header {
-  background: #ffffff
+  background: #ffffff; padding-top: 24px; padding-bottom: 24px;
 }
+
 .header-container{display: flex;}
 
 .header-nav {display: flex;}
@@ -86,11 +96,14 @@ body {
   color: #4d5ae5;
 }
 
-/* =======Main=========== */
-/* =======hero section======= */
+/* ===============================Main=========================================== */
+/* ===========================Hero section====================================== */
+
 .hero-section {
   background: #2e2f42;
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 .main-title {
   margin-bottom: 48px;
@@ -100,19 +113,113 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-.main-button{
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+.main-button{padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #FFFFFF;
   background:  #4D5AE5;
   cursor: pointer;}
-  .main-button:hover, .main-button:focus, .main-button:active{color: #FFFFFF; background: #404BBF;}
+
+.main-button:hover, 
+.main-button:focus, 
+.main-button:active {color: #FFFFFF; background: #404BBF;}
+
+/* ===============================Second section================================================ */
+
+.second-section{padding-top: 120px; padding-bottom: 120px;}
+.work-item:not(:last-child) {margin-right: 24px;}
+.feature-list{display: flex;}
+
+.secret-name {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.text {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+
+/* ==========================================Third section=============================== */
+.third-section {padding-top: 120px; padding-bottom: 120px;}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+.menu-list{display: flex;
+}
+.work-item:not(:last-child) {margin-right: 24px;}
+
+/* =======================================Fourth section==================================== */
+
+.fourt-section{padding-top: 120px; padding-bottom: 120px;}
+
+.menu-list-fs{display: flex;
+flex-wrap: wrap;}
+.fourth-section-color {
+  background: #f4f4fd;
+}
+.team-item:not(:last-child) {margin-right: 24px;}
+
+
+
+.team-position {padding-top: 32px; padding-left: 49px; padding-right: 49px; padding-bottom: 32px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;}
+/* ==========================================Footer========================================= */
+.footer-page {
+  display: flex;
+  background: var(--footer-background);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.color-text {
+  color: #e7e9fc;
+}
+.logo-web {
+  color: #4d5ae5;
+}
+.logo-studio {
+  color: #f4f4fd;
+}
+/* =======================================Portfolio=========================================== */
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
 .btn {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -125,63 +232,4 @@ body {
 .btn:active {
   color: #ffffff;
   background: #404bbf;
-}
-
-
-/* =========second section========= */
-.feature-list{display: flex;}
-.secret-name {
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
-
-.title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-.text {
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-/* =========third section======= */
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-/* ==========fourth section======= */
-.fourth-section-color {
-  background: #f4f4fd;
-}
-/* =======Footer========= */
-.footer-page {
-  background: var(--footer-background);
-}
-.color-text {
-  color: #e7e9fc;
-}
-.logo-web {
-  color: #4d5ae5;
-}
-.logo-studio {
-  color: #f4f4fd;
-}
-/* -------Portfolio-------- */
-/* -------Mane Page-------- */
-.subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
 }
