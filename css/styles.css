@@ -13,7 +13,7 @@ body {
   color: #ffffff;
   background-color: #ffffff;
 }
-.container {width: 1128; margin-left: auto; margin-right: auto;}
+.container {width: 1152px; margin-left: auto; margin-right: auto; padding-left: 12px; padding-right: 12px;}
 
 .list {
   list-style: none;
@@ -42,14 +42,24 @@ body {
 /* =======WebStudio======== */
 /* =======Header========== */
 .main-header {
-  background: #ffffff;
-  color: #404bbf;
+  background: #ffffff
 }
+.header-container{display: flex;}
+
+.header-nav {display: flex;}
+
+.header-adr {margin-left: auto;}
+
+.menu-list {display: flex;}
+
+.header-item:not(:last-child){margin-right: 40px;}
+
 .head-logo-web {
   color: #4d5ae5;
 }
 .head-logo-studio {
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 .link {
@@ -80,14 +90,26 @@ body {
 /* =======hero section======= */
 .hero-section {
   background: #2e2f42;
+  text-align: center;
 }
 .main-title {
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
+.main-button{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  background:  #4D5AE5;
+  cursor: pointer;}
+  .main-button:hover, .main-button:focus, .main-button:active{color: #FFFFFF; background: #404BBF;}
 .btn {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -102,14 +124,12 @@ body {
 .btn:focus,
 .btn:active {
   color: #ffffff;
-  background: #4d5ae5;
-}
-
-.btn:active {
   background: #404bbf;
 }
 
+
 /* =========second section========= */
+.feature-list{display: flex;}
 .secret-name {
   font-weight: 500;
   line-height: 1.5;
