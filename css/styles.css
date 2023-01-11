@@ -28,7 +28,8 @@ body {
 }
 
 .logo{letter-spacing: 0.03em;
-  text-transform: uppercase;}
+  text-transform: uppercase;
+}
 
   .logo-head {
   font-family: var(--logo-font);
@@ -51,8 +52,10 @@ body {
 /* =======================================Header==================================== */
 
 .main-header {
-  background: #ffffff; padding-top: 24px; padding-bottom: 24px;
+  background: #ffffff;
 }
+.link-header {  padding-top: 24px;
+  padding-bottom: 24px; margin-right: 76px;}
 
 .header-container{display: flex;}
 
@@ -69,7 +72,7 @@ body {
 }
 .head-logo-studio {
   color: #2e2f42;
-  margin-right: 76px;
+  
 }
 
 .link {
@@ -77,11 +80,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  
 }
 .link:hover,
 .link:focus {
   color: #4d5ae5;
 }
+
 
 .contact {
   font-style: normal;
@@ -106,6 +111,7 @@ body {
   padding-bottom: 292px;
 }
 .main-title {
+  max-width: 494px;
   margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
@@ -212,6 +218,8 @@ flex-wrap: wrap;}
   color: #f4f4fd;
 }
 /* =======================================Portfolio=========================================== */
+.menu-list-mp{display: flex;
+justify-content: center;}
 .subtitle {
   font-weight: 500;
   font-size: 20px;
