@@ -196,6 +196,14 @@ body {
 }
 
 .secret-name {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -283,8 +291,8 @@ body {
 
 .footer-page {
   background: var(--footer-background);
-  padding-top: 126px;
-  padding-bottom: 74px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .color-text {
   color: #e7e9fc;
