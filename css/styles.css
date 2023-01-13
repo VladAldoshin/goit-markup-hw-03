@@ -177,7 +177,10 @@ body {
   background: #4d5ae5;
   cursor: pointer;
 }
-
+.hero-section-button:hover {
+  color: #ffffff;
+  background: #4d5ae5;
+}
 .hero-section-button:focus,
 .hero-section-button:active {
   color: #ffffff;
@@ -335,7 +338,10 @@ body {
   cursor: pointer;
 }
 
-.portfolio-button:hover,
+.portfolio-button:hover {
+  color: #ffffff;
+  background: #404bbf;
+}
 .portfolio-button:focus,
 .portfolio-button:active {
   color: #ffffff;
@@ -359,7 +365,10 @@ body {
   cursor: pointer;
 }
 
-.portfolio-second-button:hover,
+.portfolio-second-button:hover {
+  color: #ffffff;
+  background: #404bbf;
+}
 .portfolio-second-button:focus,
 .portfolio-second-button:active {
   color: #ffffff;
@@ -384,9 +393,8 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-image-background {
